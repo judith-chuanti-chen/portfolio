@@ -13,7 +13,7 @@ export default ({data}) => { // if we have query, we have 'data' prop
   } = data
   return <Layout>
     <Hero/>
-    <Services/>
+    {/* <Services/> */}
     <Jobs/>
     <Projects projects={projects} title="featured projects" showLink/>
     <Blogs blogs={blogs} title="latest articles" showLink />
