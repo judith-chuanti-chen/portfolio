@@ -6,18 +6,19 @@
 
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
-    image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    title: "Judith Chen",
+    description: "Judith Chuan-Ti Chen | CS Graduate Student | Software Engineer",
+    author: "@judith-chuanti-chen",
+    linkedInUsername: "@judith-chuanti-chen",
+    image: "./static/site-snapshot.png",
+    siteUrl: "https://judith-chuanti-chen.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-manifest`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,6 +38,20 @@ module.exports = {
         singleTypes: [`about`],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#149199`,
+        theme_color: `#52d1da`,
+        display: `standalone`,
+        icon: "static/android-chrome-512x512.png",
+      },
+    },
+
+
     // {
     //   resolve: `gatsby-plugin-prefetch-google-fonts`,
     //   options: {
