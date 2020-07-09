@@ -8,7 +8,7 @@ const query = graphql`
       siteMetadata {
         author
         siteDesc: description
-        linkedInUsername
+        twitterUsername
         image
         siteUrl
         siteTitle: title
@@ -23,18 +23,21 @@ const SEO = ({title, description}) => {
     siteTitle, 
     siteUrl, 
     image, 
-    linkedInUsername
+    twitterUsername
   } = site.siteMetadata
   return <Helmet htmlAttributes={{lang:"en"}} title={`${title} | ${siteTitle}`}>
     <meta name="description" content={description || siteDesc} />
     <meta name="image" content={image}/>
     <meta property="og:title" content={title|| siteTitle}/>
+    <meta property="og:type"  content="website"/>
     <meta property="og:description" content={description || siteDesc} />
     <meta property="og:image" content={image}/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
     <meta property="og:url" content={siteUrl}/>
-    <meta name="twitter:card" cotent={image}/>
+    <meta property="fb:app_id" content="276206693457455"/>
+    <meta name="twitter:card" content={image}/>
+    <meta name="twitter:creator" content={twitterUsername}/>
   </Helmet>
 }
 
