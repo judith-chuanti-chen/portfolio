@@ -10,7 +10,7 @@ module.exports = {
     description: "Judith Chuan-Ti Chen | CS Graduate Student | Software Engineer",
     author: "@judith-chuanti-chen",
     twitterUsername: "@gotta_be_judy",
-    image: "site-snapshot.png",
+    image: "/site-snapshot.png",
     siteUrl: "https://judith-chuanti-chen.netlify.app",
   },
   plugins: [

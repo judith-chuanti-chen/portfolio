@@ -38,8 +38,12 @@ const SEO = ({title, description}) => {
     <meta property="og:image:height" content="630"/>
     <meta property="og:url" content={siteUrl}/>
     <meta property="fb:app_id" content="276206693457455"/>
-    <meta name="twitter:card" content={image}/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content={`${siteUrl} ${image}`}/>
     <meta name="twitter:creator" content={twitterUsername}/>
+    <meta name="twitter:title" content={siteTitle}/>
+    <meta name="twitter:description" content={siteDesc}/>
+
   </Helmet>
 }
 
