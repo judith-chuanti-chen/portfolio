@@ -16,7 +16,7 @@ export default ({data}) => { // if we have query, we have 'data' prop
     {/* <Services/> */}
     <Jobs/>
     <Projects projects={projects} title="featured projects" showLink/>
-    <Blogs blogs={blogs} title="latest articles" showLink />
+    {/* <Blogs blogs={blogs} title="latest articles" showLink /> */}
   </Layout>
 }
 export const query = graphql`
