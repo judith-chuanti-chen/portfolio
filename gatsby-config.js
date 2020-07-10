@@ -11,7 +11,7 @@ module.exports = {
     author: "@judith-chuanti-chen",
     twitterUsername: "@gotta_be_judy",
     image: "/site-snapshot.png",
-    siteUrl: "https://judith-chuanti-chen.netlify.app",
+    siteUrl: "https://www.judithchen.com",
   },
   plugins: [
     `gatsby-transformer-sharp`,
